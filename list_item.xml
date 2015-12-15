@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/homePicture"
+            android:contentDescription="Advanced Search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="homeTitle"
+            android:id="@+id/homeTitle"
+            android:paddingTop="10px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor= "#000000"/>
+
+        <TextView
+            android:id="@+id/homeGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Genre"
+            android:textStyle="italic"
+            android:textColor="@color/background_floating_material_dark"
+            android:paddingTop="20px"
+            android:layout_below="@+id/homeAuthor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/homeAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Authors"
+            android:textColor="@color/background_floating_material_dark"
+            android:paddingTop="20px"
+            android:layout_below="@+id/homeTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/homeDirtay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="dirtay"
+            android:layout_alignBottom="@+id/homeAuthor"
+            android:layout_centerHorizontal="true" /><![CDATA[
+
+    " />
+
+
+]]>
+    </RelativeLayout>
+</ScrollView>

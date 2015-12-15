@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_text"
+        android:inputType="text"
+        android:height="@dimen/abc_dropdownitem_icon_width"
+        android:hint="@string/abc_searchview_description_search"
+        android:textColor="@color/material_deep_teal_500" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_one"
+        android:id="@+id/button_search"
+        android:onClick="search"
+        android:textColor="@color/material_deep_teal_500"
+        android:background="@color/material_blue_grey_800"
+        android:layout_margin="@dimen/abc_edit_text_inset_top_material" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Me Options"
+        android:id="@+id/button_lucky"
+        android:onClick="iKnowWhatIWant"
+        android:textColor="@color/material_deep_teal_500"
+        android:background="@color/material_blue_grey_800"
+        android:layout_margin="@dimen/abc_action_bar_overflow_padding_end_material" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listText"
+        android:layout_below="@+id/button_lucky"
+        android:clickable="true"
+        tools:listitem="@layout/list_item" />
+<!--
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+-->
+</LinearLayout>
+
